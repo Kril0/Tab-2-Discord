@@ -1,0 +1,19 @@
+{
+  "name": "Tab2Discord",
+  "description": "Sends page of URL you are on to discord",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "Discord-URL/Chrome/discord-pop-up.html"
+  },
+    "permissions": ["tabs", "activeTab", "storage", "identity", "scripting"],
+    "host_permissions": ["http://localhost:5500/*"],
+    "web_accessible_resources": [
+  {
+    "resources": ["Discord-URL/Chrome/get-url.js"],
+    "matches": ["<all_urls>"]
+  }
+]
+}
+
+
